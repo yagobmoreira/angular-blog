@@ -3,8 +3,7 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   padding: 0px 40px;
-  width: 400px;
-  height: 500px;
+  width: 100%;
 }
 
 .photo__big-card {
