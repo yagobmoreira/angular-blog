@@ -1,0 +1,25 @@
+.container__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content__cover > img {
+  border: 5px solid rgb(119, 114, 114);
+  border-radius: 10px;
+  height: 300px;
+  min-width: 500px;
+  width: 500px;
+}
+
+.content__description {
+  margin-top: 15px;
+}
+
+.content__description > p {
+  color: rgb(190, 184, 184);
+  margin-top: 20px;
+}

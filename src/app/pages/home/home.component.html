@@ -1,16 +1,19 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-
 <app-menu-title> </app-menu-title>
-
 <div class="container__articles">
   <div class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      [cardTitle]="news[0].title"
+      [photoCover]="news[0].image"
+      [cardDescription]="news[0].description"
+      [Id]="news[0].id.toString()"
+        >
+      </app-big-card>
   </div>
   <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card *ngFor="let noticia of news.slice(1)"
+      [cardTitle]="noticia.title"
+      [photoCover]="noticia.image"
+      [Id]="noticia.id.toString()">
+    </app-small-card>
   </div>
 </div>

@@ -1,15 +1,15 @@
 <div class="container__big-card">
   <div class="photo__big-card">
-    <img src="https://i0.wp.com/thinkfirstcommunication.com/wp-content/uploads/2022/05/placeholder-1-1.png?w=1200&ssl=1" alt="" />
+    <img src="{{ photoCover }}" alt="" />
   </div>
   
   <div class="title__big-card">
     <h1>
-      <a href="">Saiu a nova versão do angular</a>
+      <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
     </h1>
   </div>
 
   <div class="description__big-card">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor accusamus itaque mollitia aperiam natus repudiandae.</p>
+    <p>{{ cardDescription }}</p>
   </div>
 </div>
